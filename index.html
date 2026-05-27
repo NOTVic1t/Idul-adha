@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Selamat Idul Adha 1447 H — Ati-Computer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;600;700&family=Amiri:ital,wght@0,400;0,700;1,400&family=Jost:wght@200;300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ══ CANVAS LAYERS ══ -->
+<canvas id="c-stars"></canvas>
+<canvas id="c-ornaments"></canvas>
+<canvas id="c-sparkles"></canvas>
+
+<!-- ══ OPENING SCREEN ══ -->
+<div id="opening">
+  <div class="op-orb op-orb-1"></div>
+  <div class="op-orb op-orb-2"></div>
+  <div class="op-orb op-orb-3"></div>
+  <div class="op-orb op-orb-4"></div>
+
+  <div class="op-center">
+    <div class="op-moon-wrap">
+      <div class="op-moon">☽</div>
+      <div class="op-star-icon">✦</div>
+    </div>
+    <div class="op-frame">
+      <div class="op-frame-corner op-fc-tl"></div>
+      <div class="op-frame-corner op-fc-tr"></div>
+      <div class="op-frame-corner op-fc-bl"></div>
+      <div class="op-frame-corner op-fc-br"></div>
+      <p class="op-bismillah">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</p>
+      <div class="op-divider"><span>◆</span></div>
+      <p class="op-tag">Selamat Hari Raya</p>
+      <h1 class="op-title">Idul Adha<br><span>1447 H</span></h1>
+      <div class="op-divider"><span>◆</span></div>
+      <p class="op-sub">Dari Keluarga Besar<br><strong>Ati-Computer</strong></p>
+    </div>
+    <button class="btn-open" id="btnOpen">✦ &nbsp; Lihat Ucapan &nbsp; ✦</button>
+  </div>
+</div>
+
+<!-- ══ AUDIO ══ -->
+<audio id="bgMusic" loop preload="auto">
+  <source src="assets/music/takbiran.mp3" type="audio/mpeg">
+</audio>
+
+<!-- ══ MUSIC BUTTON ══ -->
+<button id="music-btn" title="Play/Pause">
+  <span id="musicIcon">♫</span>
+</button>
+
+<!-- ══ MAIN CONTENT ══ -->
+<div id="main-content">
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+    <div class="hero-geo-pattern"></div>
+
+    <div class="hero-inner">
+      <div class="hero-moon-deco">☽ <span class="hero-star-deco">✦</span></div>
+
+      <p class="reveal section-tag">Hari Raya Idul Adha · 1447 H</p>
+
+      <div class="main-card reveal rd1">
+        <div class="card-corner card-corner-tl"></div>
+        <div class="card-corner card-corner-tr"></div>
+        <div class="card-corner card-corner-bl"></div>
+        <div class="card-corner card-corner-br"></div>
+
+        <!-- BISMILLAH -->
+        <p class="bismillah reveal rd1">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</p>
+        <div class="gold-divider reveal rd2"><span>◆</span></div>
+
+        <!-- GREETING -->
+        <div class="greeting reveal rd2">
+          <p class="greeting-from">Kami Sekeluarga</p>
+          <p class="greeting-company">Ati-Computer</p>
+          <p class="greeting-verb">Mengucapkan</p>
+        </div>
+
+        <div class="gold-divider reveal rd3"><span>✦</span></div>
+
+        <div class="main-greeting reveal rd3">
+          <p class="greeting-label">Selamat Hari Raya</p>
+          <h2 class="greeting-title">Idul Adha</h2>
+          <p class="greeting-year">1447 H &nbsp;/&nbsp; 2026 M</p>
+        </div>
+
+        <div class="gold-divider reveal rd4"><span>◆</span></div>
+
+        <div class="minal reveal rd4">
+          <p class="minal-text">Minal Aidin Wal Faizin</p>
+          <p class="minal-sub">Mohon Maaf Lahir dan Batin</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE -->
+  <section id="quote">
+    <div class="quote-orb"></div>
+    <div class="quote-inner reveal">
+      <div class="gold-divider" style="margin-bottom:32px"><span>◆</span></div>
+      <p class="quote-arabic reveal rd1">وَلِكُلِّ أُمَّةٍ جَعَلْنَا مَنسَكًا لِّيَذْكُرُوا اسْمَ اللَّهِ</p>
+      <p class="quote-trans reveal rd2">"Dan bagi setiap umat telah Kami syariatkan penyembelihan kurban, agar mereka menyebut nama Allah."</p>
+      <p class="quote-source reveal rd3">— QS. Al-Hajj: 34</p>
+      <div class="gold-divider" style="margin-top:32px"><span>◆</span></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <p class="section-tag reveal">Hubungi Kami</p>
+    <h3 class="contact-title reveal rd1">Ati-Computer</h3>
+    <p class="contact-sub reveal rd2">Siap melayani dengan sepenuh hati</p>
+
+    <div class="wa-buttons reveal rd3">
+      <a class="wa-btn" href="https://wa.me/6281276262222" target="_blank" rel="noopener">
+        <span class="wa-icon">✆</span>
+        <span class="wa-info">
+          <span class="wa-type">Service</span>
+          <span class="wa-number">0812-7626-2222</span>
+        </span>
+      </a>
+      <a class="wa-btn" href="https://wa.me/6282371794444" target="_blank" rel="noopener">
+        <span class="wa-icon">✆</span>
+        <span class="wa-info">
+          <span class="wa-type">Penjualan</span>
+          <span class="wa-number">0823-7179-4444</span>
+        </span>
+      </a>
+    </div>
+
+    <div class="address reveal rd4">
+      <span class="address-pin">📍</span>
+      <p>Jalan Raya Pasar, Simpang Srimenanti,<br>Bandar Sribhawono, Kab. Lampung Timur,<br>Lampung</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="footer-moon">☽ ✦ ☾</div>
+    <p class="footer-text">© 2026 Ati-Computer · All Rights Reserved</p>
+    <p class="footer-sub">Taqabbalallahu Minna Wa Minkum</p>
+  </footer>
+
+</div><!-- /main-content -->
+
+<script src="js/main.js"></script>
+</body>
+</html>
